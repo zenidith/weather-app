@@ -51,7 +51,7 @@ function getWeather(latitude, longitude){
     })
     .then (function(data){
         weather.temperature.value = Math.floor(data.main.temp - KELVIN);
-        weather.description = data.weather.[0].description;
+        weather.description = data.weather[0].description;
         weather.iconId = data.weather[0].icon;
         weather.city = data.name;
         weather.country = data.sys.country;
@@ -63,6 +63,8 @@ function getWeather(latitude, longitude){
 
 // Display the weather to the UI
 function displayWeather(){
-    iconElement.innerHTML = `<img src="icons/${weather.iconId}.png`;
-    
+    iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
+    tempElement.innerHTML = `${weather.temperature.value}° <span>C</span>`;
+    descElement.innerHTML = weather.description;
+    locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 }
