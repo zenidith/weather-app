@@ -9,11 +9,11 @@ CSS
 JS 
 - Targeted elements in dom and put them into constant variables. 
 
-`const iconElement = document.querySelector('.weather-icon');<br>
-const tempElement = document.querySelector('.temperature-value');<br>
-const descElement = document.querySelector('.temperature-description');<br>
-const locationElement = document.querySelector('.location');<br>
-const notificationElement = document.querySelector('.notification');`
+`const iconElement = document.querySelector('.weather-icon');`
+`const tempElement = document.querySelector('.temperature-value');`
+`const descElement = document.querySelector('.temperature-description');`
+`const locationElement = document.querySelector('.location');`
+`const notificationElement = document.querySelector('.notification');`
 
 - Because the default unit was 'kelvin', I put kelvin into a constant as 273 then subtracted 'kelvin' off the math function in the fetching of the API in order to display the weather in the more universally used 'Celsius'. 
 - used a setPosition() function and then saved latitude/longitude into variables. MDN documentation can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/GeolocationCoordinates/longitude)
