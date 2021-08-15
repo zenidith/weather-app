@@ -1,3 +1,5 @@
+![Weather App](images/screenshot.png)
+
 This is a functional Weather App that I made by using an API key from stringing together the latitude and longitude coordinates from [Open Weather](https://openweathermap.org/current#geo) by getting the geolocation from the users browser, if they give permission to do so. You can try the app live [here](https://zenidith.github.io/weather-app/)
 
 HTML 
